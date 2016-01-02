@@ -19,6 +19,8 @@ def add():
 		for row in reader:
 			idFromCSV = row['ID Number']
 			road_name = row['Road Name']
+			# This is a workaround to cast all road names 
+			# to unicode
 			road_name_unicode = unicode(road_name, "utf-8")
 
 			if road_name is not road_name_unicode:
