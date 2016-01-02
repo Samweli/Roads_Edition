@@ -10,12 +10,11 @@ def add(){
 
 		reader = csv.DictReader(csvfile)
 		for row in reader:
-			# TODO take road name and id
 			id = row['ID Number']
 			road_name = row['Road Name']
 
 			t = (road_name)
-			c.execute('SELECT * FROM  WHERE Road Name LIKE ?', t)
+			c.execute('SELECT * FROM * WHERE Road Name LIKE ?', t)
 			c.fetchone[0]
 
 
