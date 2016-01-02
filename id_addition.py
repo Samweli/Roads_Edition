@@ -3,7 +3,7 @@ import csv
 
 
 def add(){
-	connection = connect('database/duplicates_to_identify')
+	connection = connect('../database/duplicates_to_identify')
 	c = connection.cursor()
 
 	with open('DISTRICT-COUNCIL-ROADNETWORK-Cleaned-csv_.csv') as csvfile:
